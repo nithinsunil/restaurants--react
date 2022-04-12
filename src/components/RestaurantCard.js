@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom'
 function RestaurantCard({ data }) {
     return (
         <Link to = {`restaurants/${data.id}`}>
-         <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={data.photograph} />
+         <Card className="py-2" style={{ width: '18rem' }}>
+            <Card.Img className="p-4" variant="top" src={data.photograph} />
             <Card.Body>
                 <Card.Title>{data.name}</Card.Title>
                 <Card.Text>
